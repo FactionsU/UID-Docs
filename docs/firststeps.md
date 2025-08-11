@@ -12,7 +12,7 @@ Time to make your own new faction! The create command lets you set the faction's
 
 Awesome! Now koolkids is a real faction and you're its leader! Let's give it a good description:
 
-`/f desc Where all the kool kids hang out`
+`/f set description Where all the kool kids hang out`
 
 Very intimidating! Time to really intimidate with a quality base. Find a good looking chunk and claim it.
 
@@ -20,7 +20,7 @@ Very intimidating! Time to really intimidate with a quality base. Find a good lo
 
 You are now the proud owner of a chunk! Build yourself a little house, maybe put a bed inside, and set faction home.
 
-`/f sethome`
+`/f set home`
 
 Now, your faction members can teleport to this location to go back to the base. Wait! You need members!
 

@@ -34,6 +34,22 @@ The tag is not used because factions could change tag and that would be painful 
 prevent players in enemy territory from using particular features of another plugin that are permission-based (not 
 just limited to commands).
 
+`factionsuuid:territory-id`  
+**Possible values**: any number  
+**Description**: What is the ID of the faction whose land the player is standing in?
+
+`factionsuuid:territory-is-safezone`  
+**Possible values**: true, false  
+**Description**: Is the player standing in safezone?
+
+`factionsuuid:territory-is-warzone`  
+**Possible values**: true, false  
+**Description**: Is the player standing in warzone?
+
+`factionsuuid:territory-is-wilderness`  
+**Possible values**: true, false  
+**Description**: Is the player standing in unclaimed land (wilderness)?
+
 ### Faction role at least
  
 `factionsuuid:role-at-least`  

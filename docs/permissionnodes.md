@@ -1,123 +1,107 @@
 # Permission Nodes
 
-!!! note "Looking for /f perms? [Click here](permissions.md)"
+!!! note "Looking for `/f set perm`? [Click here](permissions.md)"
 
-!!! warning "This page is presently under construction. Permissions are all here but descriptions are incomplete"
 
-Below is a full list of all permission nodes. A check mark (✔) is next to any node granted by default to all users.
+Below is a full list of all permission nodes. See `factions.kit.halfplayer` for the ones granted by default.
+It is suggested that you grant at least `factions.kit.halfmod` to staff.
 
-| Permission Node               | Description                                                                           |
-|-------------------------------|---------------------------------------------------------------------------------------|
-| factions.admin ✔              | Set new player as leader of your faction                                              |
-| factions.admin.any            | Set new player as leader of any faction                                               |
-| factions.ahome                | Teleport a player to their faction's home                                             |
-| factions.announce             | Send a message to players in your faction                                             |
-| factions.autoclaim ✔          | Use autoclaim command to automatically claim by walking                               |
-| factions.autoleavebypass      | Ignored by the auto-leave mechanism                                                   |
-| factions.ban ✔                | Ban users from your faction                                                           |
-| factions.bypass               | Can set yourself to bypass faction permission checks using `/f bypass`                |
-| factions.chat ✔               | Toggle chat modes                                                                     |
-| factions.chatspy              | Ability to use command to spy on private chat channels                                |
-| factions.claim ✔              | Grants the ability to claim territory for one's own faction                           |
-| factions.claim.fill           | Grants the ability to claim territory for one's own faction filling in a shape        |
-| factions.claim.line ✔         | Grants the ability to claim territory for one's own faction in a line                 |
-| factions.claim.radius ✔       | Grants the ability to claim territory for one's own faction in a line at a set radius |
-| factions.claimat              | Grants the ability to claim territory for one's own faction at a distance             |
-| factions.coleader ✔           | Set new coleader for your faction                                                     |
-| factions.coleader.any         | Set new coleader for any faction                                                      |
-| factions.coords ✔             | Can send your current coordinates to fellow faction members using /f coords           |
-| factions.create ✔             | Can create factions                                                                   |
-| factions.debug                | Can use the `/f ticketinfo` command                                                   |
-| factions.defaultrank          | Can set the faction's default role                                                    |
-| factions.deinvite ✔           | Can remove invite to your faction                                                     |
-| factions.delhome ✔            | Can delete your faction's home                                                        |
-| factions.description ✔        | Can set your faction description                                                      |
-| factions.disband ✔            | Can use the disband command                                                           |
-| factions.disband.any          | Can disband any faction                                                               |
-| factions.dtr ✔                | Can view faction DTR via `/f dtr`                                                     |
-| factions.dtr.any              | Can view any faction DTR via `/f dtr get <faction>`                                   |
-| factions.fly ✔                | Grants the ability to use `/f fly`                                                    |
-| factions.fly.auto             | Grants ability to enable auto-flying                                                  |
-| factions.fly.safezone         | Grants ability to fly in safezone territory                                           |
-| factions.fly.trails           | Grants ability to have particle trails while flying                                   |
-| factions.fly.warzone          | Grants ability to fly in warzone territory                                            |
-| factions.fly.wilderness       | Grants ability to fly in wilderness territory                                         |
-| factions.help ✔               | Can use /f help                                                                       |
-| factions.home ✔               | Can use /f home                                                                       |
-| factions.invite ✔             | Can use /f invite                                                                     |
-| factions.join ✔               | Can use /f join                                                                       |
-| factions.join.any             | Can use /f join to join a faction regardless of open/invite status                    |
-| factions.join.others          | Can use /f join to add other players to factions                                      |
-| factions.kick ✔               | Can use /f kick                                                                       |
-| factions.kick.any             | Can use /f kick to kick any player from any faction                                   |
-| factions.leave ✔              | Can use /f leave                                                                      |
-| factions.list ✔               | Can use /f list                                                                       |
-| factions.listclaims           | Can run /f listclaims                                                                 |
-| factions.listclaims.other     | Can run /f listclaims on other factions                                               |
-| factions.lock                 |                                                                                       |
-| factions.managesafezone       |                                                                                       |
-| factions.managewarzone        |                                                                                       |
-| factions.map ✔                |                                                                                       |
-| factions.mapheight ✔          |                                                                                       |
-| factions.mod ✔                |                                                                                       |
-| factions.mod.any              |                                                                                       |
-| factions.modifypower          |                                                                                       |
-| factions.modifydtr            |                                                                                       |
-| factions.money.balance ✔      |                                                                                       |
-| factions.money.balance.any ✔  |                                                                                       |
-| factions.money.deposit ✔      |                                                                                       |
-| factions.money.f2f ✔          |                                                                                       |
-| factions.money.f2p ✔          |                                                                                       |
-| factions.money.modify         |                                                                                       |
-| factions.money.p2f ✔          |                                                                                       |
-| factions.money.withdraw ✔     |                                                                                       |
-| factions.money.withdraw.any   |                                                                                       |
-| factions.monitorlogins ✔      |                                                                                       |
-| factions.near ✔               |                                                                                       |
-| factions.noboom ✔             |                                                                                       |
-| factions.open ✔               |                                                                                       |
-| factions.owner ✔              |                                                                                       |
-| factions.ownerlist ✔          |                                                                                       |
-| factions.ownershipbypass      |                                                                                       |
-| factions.permissions ✔        | Access to `/f perms`                                                                  |
-| factions.power ✔              |                                                                                       |
-| factions.power.any ✔          |                                                                                       |
-| factions.powerboost           |                                                                                       |
-| factions.promote              |                                                                                       |
-| factions.relation ✔           |                                                                                       |
-| factions.reload               |                                                                                       |
-| factions.save                 |                                                                                       |
-| factions.scoreboard ✔         |                                                                                       |
-| factions.seechunk ✔           |                                                                                       |
-| factions.sethome ✔            |                                                                                       |
-| factions.sethome.any          |                                                                                       |
-| factions.setmaxvaults         |                                                                                       |
-| factions.setpeaceful          |                                                                                       |
-| factions.setpermanent         |                                                                                       |
-| factions.setpermanentpower    |                                                                                       |
-| factions.setwarp              |                                                                                       |
-| factions.show ✔               |                                                                                       |
-| factions.show.bypassexempt    |                                                                                       |
-| factions.showinvites ✔        |                                                                                       |
-| factions.status               |                                                                                       |
-| factions.stuck ✔              |                                                                                       |
-| factions.tag ✔                |                                                                                       |
-| factions.title ✔              |                                                                                       |
-| factions.title.color          |                                                                                       |
-| factions.tnt.info             |                                                                                       |
-| factions.tnt.deposit          |                                                                                       |
-| factions.tnt.withdraw         |                                                                                       |
-| factions.tnt.fill             |                                                                                       |
-| factions.tnt.siphon           |                                                                                       |
-| factions.togglealliancechat ✔ |                                                                                       |
-| factions.top ✔                |                                                                                       |
-| factions.unclaim ✔            |                                                                                       |
-| factions.unclaimall ✔         |                                                                                       |
-| factions.updates              |                                                                                       |
-| factions.vault ✔              | Access to the faction vault                                                           |
-| factions.version ✔            | Can run `/f version`                                                                  |
-| factions.warp                 | Ability to use faction warps                                                          |
-| factions.warmup.exempt        | Exempt from warmups                                                                   |
+| Permission Node               | Description                                                                       |
+|-------------------------------|-----------------------------------------------------------------------------------|
+| factions.admin                | hand over your admin rights                                                       |
+| factions.admin.any            | give or revoke admin status for any player in any faction                         |
+| factions.ahome                | Ability to send players to their faction home.                                    |
+| factions.announce             | announce things to the peasants                                                   |
+| factions.autoclaim            | auto-claim land as you walk around                                                |
+| factions.autoleavebypass      | Bypass autoleave.                                                                 |
+| factions.autosave             | control autosaving                                                                |
+| factions.ban                  | Ban players from Factions                                                         |
+| factions.bypass               | enable admin bypass mode                                                          |
+| factions.chat                 | change chat mode                                                                  |
+| factions.chatspy              | enable admin chat spy mode                                                        |
+| factions.claim                | claim land where you are standing                                                 |
+| factions.claim.fill           | claim filling in a shape                                                          |
+| factions.claim.radius         | claim land in a large radius                                                      |
+| factions.config               | change a conf.json setting                                                        |
+| factions.coords               | Send coordinates to your teammates                                                |
+| factions.create               | create a new faction                                                              |
+| factions.debug                | Use /f debug                                                                      |
+| factions.deinvite             | remove a pending invitation                                                       |
+| factions.delhome              | unset the faction home                                                            |
+| factions.description          | change the faction description                                                    |
+| factions.disband              | disband a faction                                                                 |
+| factions.disband.any          | disband another faction                                                           |
+| factions.dontlosepoweroffline | Don't lose power for being offline.                                               |
+| factions.dtr                  | view your faction's DTR                                                           |
+| factions.fly                  | Allow use of /f fly                                                               |
+| factions.fly.auto             | Allow use of /f fly auto                                                          |
+| factions.grace.set            | set grace                                                                         |
+| factions.grace.view           | view grace status                                                                 |
+| factions.help                 | display a help page                                                               |
+| factions.home                 | teleport to the faction home                                                      |
+| factions.invite               | invite a player to your faction                                                   |
+| factions.join                 | join a faction                                                                    |
+| factions.kick                 | kick a player from the faction                                                    |
+| factions.kick.any             | kick anyone from any faction                                                      |
+| factions.leave                | leave your faction                                                                |
+| factions.link                 | see or set the faction's link                                                     |
+| factions.list                 | see a list of the factions                                                        |
+| factions.listclaims           | List claims                                                                       |
+| factions.listclaims.other     | List claims of other factions                                                     |
+| factions.managesafezone       | claim land as a safe zone and build/destroy within safe zones                     |
+| factions.managewarzone        | claim land as a war zone and build/destroy within war zones                       |
+| factions.map                  | show the territory map, and set optional auto update                              |
+| factions.mapheight            | Set your /f map height.                                                           |
+| factions.modifydtr            | modify other factions' DTR                                                        |
+| factions.modifypower          | modify other player's power                                                       |
+| factions.money.balance        | show your factions current money balance                                          |
+| factions.money.balance.any    | show money balance for factions other than your own                               |
+| factions.money.deposit        | deposit money into a faction bank                                                 |
+| factions.money.f2f            | transfer money from faction to faction                                            |
+| factions.money.f2p            | transfer money from faction to player                                             |
+| factions.money.withdraw       | withdraw money from your faction bank                                             |
+| factions.money.withdraw.any   | withdraw money from your factions other than your own                             |
+| factions.monitorlogins        | monitor join and leaves of faction members                                        |
+| factions.near                 | Allow use of /f near to show nearby faction members                               |
+| factions.noboom               | toggle explosions (peaceful factions only)                                        |
+| factions.open                 | switch if invitation is required to join                                          |
+| factions.permissions          | Use /f perms                                                                      |
+| factions.power                | show player power info                                                            |
+| factions.power.any            | view an other players power level                                                 |
+| factions.powerboost           | apply permanent power bonus/penalty to specified player or faction                |
+| factions.promote              | promote members                                                                   |
+| factions.relation             | set relation wish to another faction                                              |
+| factions.reload               | reload data file(s) from disk                                                     |
+| factions.save                 | save all data to disk                                                             |
+| factions.scoreboard           | ability to toggle scoreboards                                                     |
+| factions.seechunk             | see the chunk you stand in                                                        |
+| factions.sethome              | set the faction home                                                              |
+| factions.setmaxvault          | Set a faction's max vaults.                                                       |
+| factions.setpeaceful          | designate a faction as peaceful                                                   |
+| factions.setpermanent         | designate a faction as permanent                                                  |
+| factions.setpermanentpower    | set permanent power for a faction                                                 |
+| factions.setwarp              | set a warp for your faction                                                       |
+| factions.shield               | use the shield feature                                                            |
+| factions.show                 | show faction information                                                          |
+| factions.show.bypassexempt    | show exempt faction information                                                   |
+| factions.showinvites          | show pending invites to your faction                                              |
+| factions.stuck                | teleports player outside a faction                                                |
+| factions.tag                  | change the faction tag                                                            |
+| factions.title                | set or remove a players title                                                     |
+| factions.title.color          | set yours or other player's titles to be colored.                                 |
+| factions.tnt.deposit          | Deposit to TNT bank                                                               |
+| factions.tnt.fill             | Use TNT fill command                                                              |
+| factions.tnt.info             | Get TNT information                                                               |
+| factions.tnt.siphon           | Use TNT siphon command                                                            |
+| factions.tnt.withdraw         | Withdraw from TNT bank                                                            |
+| factions.top                  | sort factions                                                                     |
+| factions.unclaim              | unclaim the land where you are standing                                           |
+| factions.unclaimall           | unclaim all of your factions land                                                 |
+| factions.updates              | Be informed of available updates to the plugin                                    |
+| factions.upgrades             | Show faction upgrades                                                             |
+| factions.vault                | Access faction vault.                                                             |
+| factions.warp                 | access your faction warps                                                         |
+
 
 
 ## Parent modes
@@ -168,58 +152,61 @@ There are some permission nodes that grant a wide set of nodes.
 | factions.create         |
 | factions.title.color    |
 
-| factions.kit.halfplayer     |
+|factions.kit.halfplayer      |
 |-----------------------------|
-| factions.admin              |
-| factions.autoclaim          |
-| factions.chat               |
-| factions.claim              |
-| factions.claim.line         |
-| factions.claim.radius       |
-| factions.coords             |
-| factions.deinvite           |
-| factions.description        |
-| factions.disband            |
-| factions.dtr                |
-| factions.help               |
-| factions.home               |
-| factions.invite             |
-| factions.join               |
-| factions.kick               |
-| factions.leave              |
-| factions.list               |
-| factions.map                |
-| factions.mod                |
-| factions.money.kit.standard |
-| factions.noboom             |
-| factions.open               |
-| factions.owner              |
-| factions.ownerlist          |
-| factions.power              |
-| factions.power.any          |
-| factions.relation           |
-| factions.sethome            |
-| factions.delhome            |
-| factions.show               |
-| factions.stuck              |
-| factions.tag                |
-| factions.title              |
-| factions.version            |
-| factions.unclaim            |
-| factions.unclaimall         |
-| factions.scoreboard         |
-| factions.showinvites        |
-| factions.seechunk           |
-| factions.monitorlogins      |
-| factions.top                |
-| factions.togglealliancechat |
-| factions.vault              |
-| factions.mapheight          |
-| factions.ban                |
-| factions.fly                |
-| factions.coleader           |
-| factions.near               |
-| factions.permissions        |
+|factions.admin               |
+|factions.autoclaim           |
+|factions.ban                 |
+|factions.chat                |
+|factions.claim               |
+|factions.claim.line          |
+|factions.claim.radius        |
+|factions.coleader            |
+|factions.coords              |
+|factions.deinvite            |
+|factions.delhome             |
+|factions.description         |
+|factions.disband             |
+|factions.dtr                 |
+|factions.fly                 |
+|factions.grace.view          |
+|factions.help                |
+|factions.home                |
+|factions.invite              |
+|factions.join                |
+|factions.kick                |
+|factions.leave               |
+|factions.link                |
+|factions.list                |
+|factions.map                 |
+|factions.mapheight           |
+|factions.mod                 |
+|factions.money.kit.standard  |
+|factions.monitorlogins       |
+|factions.near                |
+|factions.noboom              |
+|factions.open                |
+|factions.permissions         |
+|factions.power               |
+|factions.power.any           |
+|factions.promote             |
+|factions.relation            |
+|factions.scoreboard          |
+|factions.seechunk            |
+|factions.sethome             |
+|factions.shield              |
+|factions.show                |
+|factions.showinvites         |
+|factions.stuck               |
+|factions.tag                 |
+|factions.title               |
+|factions.top                 |
+|factions.unclaim             |
+|factions.unclaimall          |
+|factions.upgrades            |
+|factions.vault               |
+|factions.version             |
+
 
 | factions.money.kit.standard |
 |-----------------------------|

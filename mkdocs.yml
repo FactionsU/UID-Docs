@@ -12,7 +12,7 @@ repo_url: 'https://github.com/FactionsU/UID'
 edit_uri: 'edit/main/docs/'
 
 # Copyright
-copyright: 'Copyright &copy; 2019-2024 MOSS'
+copyright: 'Copyright &copy; 2019-2025 MOSS'
 
 # Configuration
 theme:
@@ -34,6 +34,7 @@ extra_css:
 nav:
   - Home: index.md
   - Support: help.md
+  - The Big 4.0 Update: four.md
   - Introduction: introduction.md
   - Definitions: definitions.md
   - First Steps: firststeps.md
@@ -44,6 +45,7 @@ nav:
   - Placeholders: placeholders.md
   - PlaceholderAPI: placeholderapi.md
   - Particles: particles.md
+  - Upgrades: upgrades.md
   - Developers: developers.md
 
 # Customization
@@ -60,14 +62,25 @@ plugins:
 # Extensions
 markdown_extensions:
   - admonition
+  - attr_list
   - codehilite:
       guess_lang: false
+  - md_in_html
   - pymdownx.critic
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
   - toc:
       permalink: true
+

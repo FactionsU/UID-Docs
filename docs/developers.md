@@ -2,11 +2,23 @@
 
 !!! warning "This page contains information only useful to plugin developers"
 
-### Maven details:  
-Repository: `https://dependency.download/releases`  
-groupId: `dev.kitteh`  
-artifactId: `factionsuuid`  
-version: `0.7.0`
+### Coordinates  
+```kotlin
+repositories {
+    exclusiveContent {
+        forRepository {
+            maven("https://dependency.download/releases")
+        }
+
+        filter {
+            includeGroup("dev.kitteh")
+        }
+    }
+}
+dependencies {
+    compileOnly("dev.kitteh:factions:4.0.0")
+}
+```
 
 ## FLocation
 FLocation is a Chunk wrapper. If you ever want to deal with the map, claimed land, or something similar, you'll need to
@@ -19,12 +31,7 @@ FLocation flocation = new FLocation(location);
 
 **Getting from a Chunk**
 ```java
-// Broken apart just to avoid making an overly wide example
-String worldName = chunk.getWorld().getName();
-int x = chunk.getX();
-int z = chunk.getZ();
-
-FLocation flocation = new FLocation(worldName, x, z);
+FLocation flocation = new FLocation(chunk);
 ```
 
 ## FPlayers
@@ -33,28 +40,33 @@ get the associated FPlayer if you already have the Bukkit Player or their UUID.
 
 **By Bukkit Player**
 ```java
-FPlayer fplayer = FPlayers.getInstance().getByPlayer(player);
+FPlayer fplayer = FPlayers.fPlayers().get(player);
 ```
 
 **By UUID**
 ```java
-FPlayer fplayer = FPlayers.getInstance().getById(uuid.toString());
+FPlayer fplayer = FPlayers.fPlayers().get(uuid);
 ```
 
 **Get Role**
 ```java
-Role fplayerRole = fplayer.getRole();
+Role fplayerRole = fplayer.role();
 ``` 
 
 ## Factions
 There are multiple ways you can get a Faction.
 
-**Most common is by name (aka tag)**
+**By name (aka tag)**
 ```java
-Faction faction = Factions.getInstance().getByTag("name");
+Faction faction = Factions.factions().get("name");
+```
+
+If you have an FPlayer
+```java
+Faction faction = fPlayer.faction();
 ```
 
 If you have a FLocation, you can get the Faction that owns it (including Wilderness, Warzone, and Safezone)
 ```java
-Faction faction = Board.getInstance().getFactionAt(fLocation);
+Faction faction = fLocation.faction();
 ```

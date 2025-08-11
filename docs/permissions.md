@@ -25,7 +25,7 @@ config, admins can additionally set actions to *hidden* and this will prevent th
 is not advisable to hide an action after the server has been running without also setting an `all` override selector for 
 it to avoid any previously set options from being unchangeable by faction admins.
 
-All of this functionality can be controlled by a faction leader through the `/f perms` command, just by running that 
+All of this functionality can be controlled by a faction leader through the `/f set perm` command, just by running that 
 base command and clicking the text within to add/remove/reorder selectors.
 
 ## Actions
@@ -47,16 +47,18 @@ invite | Able to invite others to the faction
 item | Use items in faction territory (while not raidable)
 kick | Can kick faction members
 lever | Use levers in faction territory (while not raidable)
-owner | Can created owned areas with /f owner
 pain | Allows building/destroying in faction territory but causes pain (while not raidable)
 plate | Can interact with pressure plates
 promote | Can promote members up to their own role within the faction
 sethome | Can set the faction home
 setwarp | Can set a faction warp
+shield | Can deploy the faction shield
 territory | Can claim/unclaim faction territory
 tntdeposit | Can deposit into faction TNT bank (including siphon)
 tntwithdraw | Can withdraw from faction TNT bank (including fill)
+upgrade | Can purchase faction upgrades
 warp | Can use faction warps
+zone | Can control faction zones
 
 ## Selectors
 

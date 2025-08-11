@@ -14,13 +14,13 @@ and build (or destroy) relationships with other factions.
 A faction claims land by chunk, dependent on how much [power](#power) they possess at a rate of 1 chunk per power or at
 a set amount per faction member when in [DTR](#dtr) mode.
 Within its territory, members of the faction can exclusively build without interference of non-members (configurable
-through the `/f perms` command). Your faction's territory is where you can build your base, set your faction's home 
+through the `/f set perms` command). Your faction's territory is where you can build your base, set your faction's home 
 location, create warp points, and more.
 
 Claiming territory is performed with the `/f claim` command.
 
 !!! tip
-    Want to see the boundaries of the chunk in which you're standing? Use the `/f seechunk` command!
+    Want to see the boundaries of the chunk in which you're standing? Use the `/f toggle seechunk` command!
 
 ## Power
 
