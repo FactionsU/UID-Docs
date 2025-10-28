@@ -12,6 +12,7 @@ Upgrades are a new feature in FactionsUUID, still under active development.
     * Flight. Now it's an upgrade. If the command is enabled in config, it is (on first start only) default enabled and granted.
     * Zones. Can unlock it all at once or allow +X zones.
     * Shields! Unlock ability to temporarily protect your faction using `/f shield`
+    * Warps is now an upgrade, so enable upgradeable warp limits.
 * Configure, for now, by editing (while server is stopped) the new `data/universe.json` file. It pre-fills in example values and auto-sets each new upgrade to disabled, so you don't get surprised. Remove it from the disabled list, tweak the values/costs, and off you go!
 * New command `/f upgrades` to show upgrades and, if you have the new Permissible Action (`/f set perms`) to upgrade your faction, click the upgrades to buy!
     * Comes with a confirmation before purchasing.

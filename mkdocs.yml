@@ -12,11 +12,15 @@ repo_url: 'https://github.com/FactionsU/UID'
 edit_uri: 'edit/main/docs/'
 
 # Copyright
-copyright: 'Copyright &copy; 2019-2025 MOSS'
+copyright: 'Copyright &copy; 2019-2025'
+
+# FUUID version
+fuuidversion: 4.2.4
 
 # Configuration
 theme:
   name: 'material'
+  custom_dir: overrides
   language: 'en'
   palette:
     scheme: 'slate'
@@ -38,6 +42,7 @@ nav:
   - Introduction: introduction.md
   - Definitions: definitions.md
   - First Steps: firststeps.md
+  - Chat Formatting: chat.md
   - Commands: commands.md
   - Permissions: permissions.md
   - Permission Nodes: permissionnodes.md

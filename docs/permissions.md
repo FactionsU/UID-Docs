@@ -30,49 +30,49 @@ base command and clicking the text within to add/remove/reorder selectors.
 
 ## Actions
 
-Action | Description
---- | --- 
-ban | Can ban others from the faction
-build | Can build in faction territory (while not raidable)
-button | Use buttons in faction territory (while not raidable)
-container | Use containers in faction territory (while not raidable)
-destroy | Can destroy in faction territory (while not raidable)
-disband | Can disband the faction (careful!)
-door | Use doors in faction territory (while not raidable)
-economy | Can access faction economy
-fly | Can fly in faction territory
-frost | Can frost walk in faction territory (while not raidable)
-home | Can visit the faction home
-invite | Able to invite others to the faction
-item | Use items in faction territory (while not raidable)
-kick | Can kick faction members
-lever | Use levers in faction territory (while not raidable)
-pain | Allows building/destroying in faction territory but causes pain (while not raidable)
-plate | Can interact with pressure plates
-promote | Can promote members up to their own role within the faction
-sethome | Can set the faction home
-setwarp | Can set a faction warp
-shield | Can deploy the faction shield
-territory | Can claim/unclaim faction territory
-tntdeposit | Can deposit into faction TNT bank (including siphon)
-tntwithdraw | Can withdraw from faction TNT bank (including fill)
-upgrade | Can purchase faction upgrades
-warp | Can use faction warps
-zone | Can control faction zones
+| Action      | Description                                                                          |
+|-------------|--------------------------------------------------------------------------------------|
+| ban         | Can ban others from the faction                                                      |
+| build       | Can build in faction territory (while not raidable)                                  |
+| button      | Use buttons in faction territory (while not raidable)                                |
+| container   | Use containers in faction territory (while not raidable)                             |
+| destroy     | Can destroy in faction territory (while not raidable)                                |
+| disband     | Can disband the faction (careful!)                                                   |
+| door        | Use doors in faction territory (while not raidable)                                  |
+| economy     | Can access faction economy                                                           |
+| fly         | Can fly in faction territory                                                         |
+| frost       | Can frost walk in faction territory (while not raidable)                             |
+| home        | Can visit the faction home                                                           |
+| invite      | Able to invite others to the faction                                                 |
+| item        | Use items in faction territory (while not raidable)                                  |
+| kick        | Can kick faction members                                                             |
+| lever       | Use levers in faction territory (while not raidable)                                 |
+| pain        | Allows building/destroying in faction territory but causes pain (while not raidable) |
+| plate       | Can interact with pressure plates                                                    |
+| promote     | Can promote members up to their own role within the faction                          |
+| sethome     | Can set the faction home                                                             |
+| setwarp     | Can set a faction warp                                                               |
+| shield      | Can deploy the faction shield                                                        |
+| territory   | Can claim/unclaim faction territory                                                  |
+| tntdeposit  | Can deposit into faction TNT bank (including siphon)                                 |
+| tntwithdraw | Can withdraw from faction TNT bank (including fill)                                  |
+| upgrade     | Can purchase faction upgrades                                                        |
+| warp        | Can use faction warps                                                                |
+| zone        | Can control faction zones                                                            |
 
 ## Selectors
 
 !!! note "Any selector that can match a faction (all, faction, relation) can be used for non-player actions like pistons"
 
-Selector | Description
---- | ---
-all | Matches everything, always. 
-faction | Matches a specific faction. Can input the faction name, but will be stored using non-changing internal ID.
-player | Matches a specific player. Can input the player name, but will be stored using non-changing Mojang UUID.
-relation-single | Matches a specific relation. 
-relation-atleast | Matches a relation of at least the given type. Order: Enemy, Neutral, Truce, Ally.
-relation-atmost | Matches a relation of at most the given type. Order: Enemy, Neutral, Truce, Ally.
-role-single | Matches a specific relation
-role-atleast | Matches a role of at least the given type. Order: Recruit, Normal, Moderator, Coleader, Admin.
-role-atmost | Matches a role of at most the given type. Order: Recruit, Normal, Moderator, Coleader, Admin.
-unknown | This is how any unknown selectors loaded from storage are treated, like if a plugin providing extra selectors didn't load. Unknown selectors never match anything.
+| Selector         | Description                                                                                                                                                        |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| all              | Matches everything, always.                                                                                                                                        |
+| faction          | Matches a specific faction. Can input the faction name, but will be stored using non-changing internal ID.                                                         |
+| player           | Matches a specific player. Can input the player name, but will be stored using non-changing Mojang UUID.                                                           |
+| relation-single  | Matches a specific relation.                                                                                                                                       |
+| relation-atleast | Matches a relation of at least the given type. Order: Enemy, Neutral, Truce, Ally.                                                                                 |
+| relation-atmost  | Matches a relation of at most the given type. Order: Enemy, Neutral, Truce, Ally.                                                                                  |
+| role-single      | Matches a specific relation                                                                                                                                        |
+| role-atleast     | Matches a role of at least the given type. Order: Recruit, Normal, Moderator, Coleader, Admin.                                                                     |
+| role-atmost      | Matches a role of at most the given type. Order: Recruit, Normal, Moderator, Coleader, Admin.                                                                      |
+| unknown          | This is how any unknown selectors loaded from storage are treated, like if a plugin providing extra selectors didn't load. Unknown selectors never match anything. |

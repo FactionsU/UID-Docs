@@ -22,10 +22,12 @@ Nope!
 
 #### How do I claim safezone/warzone?
 
-`/f claim --faction safezone`
+`/f claim --faction safezone`  
 `/f claim --faction warzone`
 
 #### How do I use my favorite chat plugin with this instead of the built-in chat?
+
+Consider using the newly improved [chat](chat.md) system. However, if you insist:
 
 Inside `main.conf`, find `factions`->`chat`->`paper` and change `enabled` to `false`.
 

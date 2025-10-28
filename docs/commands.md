@@ -75,7 +75,7 @@
 | /f stuck                                                 | Helps you teleport to safety when in a place you cannot break or place blocks       |
 | /f tnt                                                   | Gets the faction's TNT bank size                                                    |
 | /f tnt info                                              | Same as above                                                                       |
-| /f tnt deposit <amount>                                  | Deposits TNT from your inventory into the faction bank                              |
+| /f tnt deposit [amount]                                  | Deposits TNT from your inventory into the faction bank                              |
 | /f tnt fill <radius> <amount>                            | Fills a quantity of TNT from your bank into all dispensers within the radius        |
 | /f tnt siphon <radius> <amount>                          | Siphons a quantity of TNT from nearby dispensers into your TNT bank                 |
 | /f tnt withdraw <amount>                                 | Withdraws TNT from your bank into your inventory                                    |
@@ -101,33 +101,39 @@
 
 # Admin Commands
 
-| Command                                           | Description                                                                                                    |
-|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| /fa bypass                                        | Toggles you into or out of bypass mode                                                                         |
-| /fa chatspy                                       | Toggles you into or out of listening to internal faction chatter                                               |
-| /fa dtr modify <faction> <amount>                 | Modifies the faction's DTR by the given amount                                                                 |
-| /fa dtr reset-all                                 | Resets all factions' DTR to their maximum value                                                                |
-| /fa dtr set <faction> <amount>                    | Sets the faction's DTR to the given amount                                                                     |
-| /fa force disband <faction>                       | Forcibly disbands the given faction                                                                            |
-| /fa force home <player>                           | Sends the given player to their faction home                                                                   |
-| /fa force kick <player>                           | Forcibly kicks a player from their faction                                                                     |
-| /fa money <faction> modify <amount> --notify      | Modifies the given faction's bank balance by the given amount, optionally (with flag) notifying online members |
-| /fa money <faction> set <amount> --nofity         | Sets the given faction's bank balance, optionally (with flag) notifying online members                         |
-| /fa power boost set faction <faction> <value>     | Sets a faction's power boost to the given value                                                                |
-| /fa power boost modify faction <faction> <amount> | Modifies a faction's power boost by the given amount                                                           |
-| /fa power boost set player <player> <value>       | Sets a player's power boost to the given value                                                                 |
-| /fa power boost modify player <player> <amount>   | Modifies a player's power boost by the given amount                                                            |
-| /fa power modify <player> <amount>                | Modifies a player's power by the given amount                                                                  |
-| /fa power set <player> <value>                    | Sets a player's power to the given value                                                                       |
-| /fa power permanent <faction> <value>             | Sets a faction's power to always be a given value                                                              |
-| /fa reload                                        | Reloads configs and lang files (note: some things do still require a full restart)                             |
-| /fa save-all                                      | Saves faction data                                                                                             |
-| /fa set auto-save true/false                      | Toggles auto-saving of faction data                                                                            |
-| /fa set grace off                                 | Turns off grace (explosion protection, typically for start of server)                                          |
-| /fa set grace on <duration>                       | Turns on grace for a period of time (e.g. `5d3h` would be 5 days 3 hours)                                      |
-| /fa set max-vaults <faction> <amount>             | Sets the max quantity of `/f vault` vaults a faction has (requires PlayerVaultsX)                              |
-| /fa set peaceful <faction>                        | Sets a faction to peaceful or removes it if already set                                                        |
-| /fa set permanent <faction>                       | Sets a faction's state to permanent (requires no members) or removes it if already set                         |
-| /fa set tag <faction> <tag>                       | Changes a faction's tag                                                                                        |
-| /fa ticket-info                                   | Gets some basic info to start a help ticket in the support Discord                                             |
-| /fa ticket-info --full                            | Gets more advanced info, useful for some tickets in the support Discord                                        |
+| Command                                                         | Description                                                                                                    |
+|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| /fa bypass                                                      | Toggles you into or out of bypass mode                                                                         |
+| /fa chatspy                                                     | Toggles you into or out of listening to internal faction chatter                                               |
+| /fa dtr modify <faction> <amount>                               | Modifies the faction's DTR by the given amount                                                                 |
+| /fa dtr reset-all                                               | Resets all factions' DTR to their maximum value                                                                |
+| /fa dtr set <faction> <amount>                                  | Sets the faction's DTR to the given amount                                                                     |
+| /fa force disband <faction>                                     | Forcibly disbands the given faction                                                                            |
+| /fa force join <player> <faction>                               | Forcibly joins a player to a faction                                                                           |
+| /fa force home <player>                                         | Sends the given player to their faction home                                                                   |
+| /fa force kick <player>                                         | Forcibly kicks a player from their faction                                                                     |
+| /fa force role <member> admin/coleader/moderator/member/recruit | Sets a member's role                                                                                           |
+| /fa force role <member> promote                                 | Promotes a member one role higher                                                                              |
+| /fa force role <member> demote                                  | Demotes a member one role lower                                                                                |
+| /fa money <faction> modify <amount> --notify                    | Modifies the given faction's bank balance by the given amount, optionally (with flag) notifying online members |
+| /fa money <faction> set <amount> --nofity                       | Sets the given faction's bank balance, optionally (with flag) notifying online members                         |
+| /fa power boost set faction <faction> <value>                   | Sets a faction's power boost to the given value                                                                |
+| /fa power boost modify faction <faction> <amount>               | Modifies a faction's power boost by the given amount                                                           |
+| /fa power boost set player <player> <value>                     | Sets a player's power boost to the given value                                                                 |
+| /fa power boost modify player <player> <amount>                 | Modifies a player's power boost by the given amount                                                            |
+| /fa power modify <player> <amount>                              | Modifies a player's power by the given amount                                                                  |
+| /fa power set <player> <value>                                  | Sets a player's power to the given value                                                                       |
+| /fa power permanent <faction> <value>                           | Sets a faction's power to always be a given value                                                              |
+| /fa reload                                                      | Reloads configs and lang files (note: some things do still require a full restart)                             |
+| /fa save-all                                                    | Saves faction data                                                                                             |
+| /fa set auto-save true/false                                    | Toggles auto-saving of faction data                                                                            |
+| /fa set grace off                                               | Turns off grace (explosion protection, typically for start of server)                                          |
+| /fa set grace on <duration>                                     | Turns on grace for a period of time (e.g. `5d3h` would be 5 days 3 hours)                                      |
+| /fa set max-vaults <faction> <amount>                           | Sets the max quantity of `/f vault` vaults a faction has (requires PlayerVaultsX)                              |
+| /fa set peaceful <faction>                                      | Sets a faction to peaceful or removes it if already set                                                        |
+| /fa set permanent <faction>                                     | Sets a faction's state to permanent (requires no members) or removes it if already set                         |
+| /fa set tag <faction> <tag>                                     | Changes a faction's tag                                                                                        |
+| /fa ticket-info                                                 | Gets some basic info to start a help ticket in the support Discord                                             |
+| /fa ticket-info --full                                          | Gets more advanced info, useful for some tickets in the support Discord                                        |
+| /fa tnt <faction> modify <amount>                               | Modifies the faction's TNT bank by a given amount                                                              | 
+| /fa tnt <faction> set <amount>                                  | Sets the faction's TNT bank to a given amount                                                                  |
