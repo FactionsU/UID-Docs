@@ -14,9 +14,6 @@ edit_uri: 'edit/main/docs/'
 # Copyright
 copyright: 'Copyright &copy; 2019-2025'
 
-# FUUID version
-fuuidversion: 4.2.4
-
 # Configuration
 theme:
   name: 'material'
@@ -58,6 +55,7 @@ extra:
   social:
     - icon: 'fontawesome/brands/discord'
       link: 'https://discord.gg/PHpuzZS'
+  fuuidversion: 4.2.4
 
 # Plugins
 plugins:
