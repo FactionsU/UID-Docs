@@ -17,11 +17,12 @@ It is suggested that you grant at least `factions.kit.halfmod` to staff.
 | factions.ban                  | Ban players from Factions                                          |
 | factions.bypass               | enable admin bypass mode                                           |
 | factions.chat                 | change chat mode                                                   |
-| factions.chatspy              | enable admin chat spy mode                                         |
+| factions.chatspy              | enable admin chat spy mode                                         |  
 | factions.claim                | claim land where you are standing                                  |
 | factions.claim.fill           | claim filling in a shape                                           |
 | factions.claim.radius         | claim land in a large radius                                       |
 | factions.config               | change a conf.json setting                                         |
+| factions.confirm              | confirmation of various commands                                   |
 | factions.coords               | Send coordinates to your teammates                                 |
 | factions.create               | create a new faction                                               |
 | factions.debug                | Use /f debug                                                       |
@@ -164,6 +165,7 @@ There are some permission nodes that grant a wide set of nodes.
 | factions.claim.line         |
 | factions.claim.radius       |
 | factions.coleader           |
+| factions.confirm            |
 | factions.coords             |
 | factions.deinvite           |
 | factions.delhome            |

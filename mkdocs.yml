@@ -55,7 +55,7 @@ extra:
   social:
     - icon: 'fontawesome/brands/discord'
       link: 'https://discord.gg/PHpuzZS'
-  fuuidversion: 4.2.4
+  fuuidversion: 4.3.0
 
 # Plugins
 plugins:
