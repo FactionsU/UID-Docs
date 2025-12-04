@@ -16,7 +16,7 @@ repositories {
     }
 }
 dependencies {
-    compileOnly("dev.kitteh:factions:4.0.0")
+    compileOnly("dev.kitteh:factions:4.4.0")
 }
 ```
 
