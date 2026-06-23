@@ -117,32 +117,32 @@ Note: Usually this tag is `<player>` but in chat is `<sender>` instead.
 
 These run in nearly every single situation MiniMessage is used.
 
-| Tag                                      | Description                                                                           |
-|------------------------------------------|---------------------------------------------------------------------------------------|
-| `<fuuid:title>`                          | Turns the text inside (between open/close tags) into a title, according to the config |
-| `<fuuid:players_count_online>`           | Total count of players online                                                         |
-| `<fuuid:players_factionless_online>`     | Total count of factionless players online                                             |
-| `<fuuid:players_factionless_total>`      | Total count of factionless players tracked                                            |
-| `<fuuid:players_faction_members_online>` | Total count of faction-having players online                                          |
-| `<fuuid:players_faction_members_total>`  | Total count of faction-having players tracked                                         |
-| `<fuuid:players_tracked_total>`          | Total count of players tracked                                                        |
-| `<fuuid:color:relation:member>`          | Colors text inside (between open/close tags) to the member color                      |
-| `<fuuid:color:relation:ally>`            | Colors text inside (between open/close tags) to the ally color                        |
-| `<fuuid:color:relation:truce>`           | Colors text inside (between open/close tags) to the truce color                       |
-| `<fuuid:color:relation:enemy>`           | Colors text inside (between open/close tags) to the enemy color                       |
-| `<fuuid:color:relation:neutral>`         | Colors text inside (between open/close tags) to the neutral color                     |
-| `<fuuid:color:role:admin>`               | Colors text inside (between open/close tags) to the admin color                       |
-| `<fuuid:color:role:coleader>`            | Colors text inside (between open/close tags) to the coleader color                    |
-| `<fuuid:color:role:moderator>`           | Colors text inside (between open/close tags) to the moderator color                   |
-| `<fuuid:color:role:member>`              | Colors text inside (between open/close tags) to the regular member color              |
-| `<fuuid:color:role:recruit>`             | Colors text inside (between open/close tags) to the recruit color                     |
-| `<fuuid:color:peaceful>`                 | Colors text inside (between open/close tags) to the peaceful color                    |
-| `<fuuid:color:safezone>`                 | Colors text inside (between open/close tags) to the safezone color                    |
-| `<fuuid:color:warzone>`                  | Colors text inside (between open/close tags) to the warzone color                     |
-| `<fuuid:color:wilderness>`               | Colors text inside (between open/close tags) to the wilderness color                  |
-| `<fuuid:if_economy>`                     | Closeable if statement, only showing inside the statement if economy is enabled       |
-| `<fuuid:if_banks>`                       | Closeable if statement, only showing inside the statement if banks are enabled        |
-
+| Tag                                      | Description                                                                               |
+|------------------------------------------|-------------------------------------------------------------------------------------------|
+| `<fuuid:title>`                          | Turns the text inside (between open/close tags) into a title, according to the config     |
+| `<fuuid:players_count_online>`           | Total count of players online                                                             |
+| `<fuuid:players_factionless_online>`     | Total count of factionless players online                                                 |
+| `<fuuid:players_factionless_total>`      | Total count of factionless players tracked                                                |
+| `<fuuid:players_faction_members_online>` | Total count of faction-having players online                                              |
+| `<fuuid:players_faction_members_total>`  | Total count of faction-having players tracked                                             |
+| `<fuuid:players_tracked_total>`          | Total count of players tracked                                                            |
+| `<fuuid:color:relation:member>`          | Colors text inside (between open/close tags) to the member color                          |
+| `<fuuid:color:relation:ally>`            | Colors text inside (between open/close tags) to the ally color                            |
+| `<fuuid:color:relation:truce>`           | Colors text inside (between open/close tags) to the truce color                           |
+| `<fuuid:color:relation:enemy>`           | Colors text inside (between open/close tags) to the enemy color                           |
+| `<fuuid:color:relation:neutral>`         | Colors text inside (between open/close tags) to the neutral color                         |
+| `<fuuid:color:role:admin>`               | Colors text inside (between open/close tags) to the admin color                           |
+| `<fuuid:color:role:coleader>`            | Colors text inside (between open/close tags) to the coleader color                        |
+| `<fuuid:color:role:moderator>`           | Colors text inside (between open/close tags) to the moderator color                       |
+| `<fuuid:color:role:member>`              | Colors text inside (between open/close tags) to the regular member color                  |
+| `<fuuid:color:role:recruit>`             | Colors text inside (between open/close tags) to the recruit color                         |
+| `<fuuid:color:peaceful>`                 | Colors text inside (between open/close tags) to the peaceful color                        |
+| `<fuuid:color:safezone>`                 | Colors text inside (between open/close tags) to the safezone color                        |
+| `<fuuid:color:warzone>`                  | Colors text inside (between open/close tags) to the warzone color                         |
+| `<fuuid:color:wilderness>`               | Colors text inside (between open/close tags) to the wilderness color                      |
+| `<fuuid:if_economy>`                     | Closeable if statement, only showing inside the statement if economy is enabled           |
+| `<fuuid:if_banks>`                       | Closeable if statement, only showing inside the statement if banks are enabled            |
+| `<fuuid:if_perm:PERMISSION>`             | Closeable if statement, only showing inside the statement if the player has the perm node |
 
 
 ### The `papi`, `papi_open`, and `papi_mini` placeholders

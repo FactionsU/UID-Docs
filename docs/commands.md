@@ -127,6 +127,7 @@
 | `/fa reload`                                                      | Reloads configs and lang files (note: some things do still require a full restart)                             |
 | `/fa save-all`                                                    | Saves faction data                                                                                             |
 | `/fa set auto-save true/false`                                    | Toggles auto-saving of faction data                                                                            |
+| `/fa set explosions true/false`                                   | Toggles explosions being possible in the faction's territory                                                   |
 | `/fa set grace off`                                               | Turns off grace (explosion protection, typically for start of server)                                          |
 | `/fa set grace on <duration>`                                     | Turns on grace for a period of time (e.g. `5d3h` would be 5 days 3 hours)                                      |
 | `/fa set max-vaults <faction> <amount>`                           | Sets the max quantity of `/f vault` vaults a faction has (requires PlayerVaultsX)                              |
