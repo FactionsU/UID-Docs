@@ -19,6 +19,7 @@ nav = [
   { "Support" = "help.md" },
   { "Project News" = [
     { "Overview" = "news/index.md" },
+    { "FactionsUUID 4.6.0" = "news/4.6.0.md" },
     { "FactionsUUID 4.5.0" = "news/4.5.0.md" },
     { "FactionsUUID 4.4.0" = "news/4.4.0.md" },
     { "FactionsUUID 4.3.0" = "news/4.3.0.md" },

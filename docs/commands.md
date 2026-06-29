@@ -138,3 +138,4 @@
 | `/fa ticket-info --full`                                          | Gets more advanced info, useful for some tickets in the support Discord                                        |
 | `/fa tnt <faction> modify <amount>`                               | Modifies the faction's TNT bank by a given amount                                                              | 
 | `/fa tnt <faction> set <amount>`                                  | Sets the faction's TNT bank to a given amount                                                                  |
+| `/fa upgrades`                                                    | Opens the in-game upgrade management menu to configure upgrades (Paper only)                                   |

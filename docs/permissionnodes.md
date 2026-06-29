@@ -101,6 +101,7 @@ It is suggested that you grant at least `factions.kit.halfmod` to staff.
 | factions.unclaimall           | unclaim all of your factions land                                  |
 | factions.updates              | Be informed of available updates to the plugin                     |
 | factions.upgrades             | Show faction upgrades                                              |
+| factions.upgrades.manage      | Manage upgrade configuration via `/fa upgrades` (Paper only)       |
 | factions.vault                | Access faction vault.                                              |
 | factions.warp                 | access your faction warps                                          |
 
