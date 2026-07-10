@@ -11,7 +11,7 @@ running at least LuckPerms version 5.1.0 for FactionsUUID to utilize this featur
 `factionsuuid:faction-id`  
 **Possible values**: Any number matching an existing faction's ID  
 **Description**: The ID of the faction the player is in. If not in a faction, they get the 
-wilderness ID which is 0. Presently you need to check `data/factions.json` for the faction ID. 
+wilderness ID which is 0. Use `/fa get <faction> id` to get the ID. 
 The tag is not used because factions could change tag and that would be painful to juggle.
 
 ### Is peaceful?
@@ -63,3 +63,10 @@ normal, and recruit. Could be used to, for example, grant a permission node only
 **Possible values**: admin, coleader, moderator, normal, recruit  
 **Description**: If a player is an admin, they will only have the admin value. If moderator, they will have moderator,
 coleader, and admin. Could be used to, for example, grant a permission node only to normal members and recruits.
+
+### Banned by faction
+
+`factionsuuid:banned-by`  
+**Possible values**: Any number matching an existing faction's ID  
+**Description**: The ID of any faction the player is banned from. Use `/fa get <faction> id` to get the ID.
+The tag is not used because factions could change tag and that would be painful to juggle.

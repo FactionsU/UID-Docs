@@ -199,7 +199,7 @@ Faction variables. Can be used in tooltips.list, scoreboards, or /f show
 | Variable                 | Explanation                                                                    |
 |--------------------------|--------------------------------------------------------------------------------|
 | {header}                 | Default factions header (ex. /f show)                                          |
-| {faction}                | Factions tag (if none, uses lang.yml for factionless name)                     |
+| {faction}                | Factions tag (if none, uses translations.conf for factionless name)            |
 | {faction-relation-color} | Factions color relative to the viewer                                          |
 | {joining}                | How to join this faction                                                       |
 | {power}                  | Factions deaths until raidable value                                           |
@@ -222,13 +222,13 @@ Faction variables. Can be used in tooltips.list, scoreboards, or /f show
 | {faction-kills}          | # of kills the faction has                                                     |
 | {faction-deaths}         | # of deaths the faction has                                                    |
 | {faction-bancount}       | # of bans the faction has                                                      |
-| {raidable}               | Displays true/false (modifiable in lang.yml)                                   |
+| {raidable}               | Displays true/false (modifiable in translations.conf)                          |
 | {dtr}                    | Current faction DTR                                                            |
 | {max-dtr}                | Max faction DTR based on players                                               |
 | {max-chunks}             | Maximum claims the faction can have (power or DTR)                             |
 | {peaceful}               | Displays a message if peaceful                                                 |
 | {permanent}              | Displays a message if permanent                                                |
-| {dtr-frozen-status}      | True or false (customizable in lang.yml) for DTR frozen state                  |
+| {dtr-frozen-status}      | True or false (customizable in translations.conf) for DTR frozen state         |
 | {dtr-frozen-time}        | Time remaining in frozen state (configure in main.conf) or blank if not frozen |
 | {tnt-balance}            | TNT bank balance                                                               |
 | {tnt-max-balance}        | Maximum TNT bank balance                                                       |

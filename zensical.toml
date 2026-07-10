@@ -62,7 +62,7 @@ primary = "green"
 accent = "light green"
 
 [project.extra]
-fuuidversion = "4.5.0"
+fuuidversion = "4.6.1"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/discord"

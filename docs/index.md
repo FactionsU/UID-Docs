@@ -16,14 +16,8 @@ This documentation is written for the modern 4.x codebase, which released in 202
 
 ## Translation
 
-You can translate most FactionsUUID messages to your own language. There are two files:
+You can translate most FactionsUUID messages to your own language. 
 
 * `plugins/FactionsUUID/config/translations.conf`
     * Modern translations in MiniMessage format.
     * Some contain placeholders that look like this: `<name>`
-* `plugins/FactionsUUID/config/lang.yml`
-    * Legacy translations in legacy color format.
-    * Some contain placeholders that look like this: `%s`
-    * This file will be, over time, slowly migrated to the newer translation file, and items will *not* be converted over.
-
-

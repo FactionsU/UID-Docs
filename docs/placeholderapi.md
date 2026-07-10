@@ -100,7 +100,7 @@ standing inside at the moment it is queried.
 | %factionsuuid_faction_kills%                   | Total kills your faction has                                                   |
 | %factionsuuid_faction_deaths%                  | Total deaths your faction has                                                  |
 | %factionsuuid_faction_maxvaults%               | Max vaults your faction can have                                               |
-| %factionsuuid_faction_dtr_frozen%              | True or false (customizable in lang.yml) for DTR frozen state                  |
+| %factionsuuid_faction_dtr_frozen%              | True or false (customizable in translations.conf) for DTR frozen state         |
 | %factionsuuid_faction_dtr_frozen_time%         | Time remaining in frozen state (configure in main.conf) or blank if not frozen |
 | %factionsuuid_faction_tnt_balance%             | TNT bank balance                                                               |
 | %factionsuuid_faction_tnt_max_balance%         | Maximum TNT bank balance                                                       |
